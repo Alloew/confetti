@@ -8,13 +8,14 @@
 </head>
 
 <body>
+    <script src="https://rawgit.com/theraot/emoji/master/emoji.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script type="module">
         const jsConfetti = new JSConfetti()
 
         window.setInterval(() => {
-            jsConfetti.addConfetti();
-        }, 100);
+            jsConfetti.addConfetti({ emojis: emoji, emojiSize: 40, confettiNumber: 5 });
+        }, 200);
     </script>
 </body>
 
